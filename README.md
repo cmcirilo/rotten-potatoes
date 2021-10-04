@@ -25,13 +25,13 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 
 - Kubernetes Commands:
 
+  - Commands
+
 | Description                   | Command                      | Obs                                            |
 | ----------------------------- | ---------------------------- | ---------------------------------------------- |
 | **list kubernetes resources** | `sudo kubectl api-resources` | used to find resources to create manifest file |
 
-- Kubernetes
-
-  - POD Commands:
+    - POD Commands:
 
 | Description                             | Command                                       | Obs                                                  |
 | --------------------------------------- | --------------------------------------------- | ---------------------------------------------------- |
