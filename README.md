@@ -25,8 +25,6 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 
 - Kubernetes Commands:
 
-  - Commands
-
 | Description                   | Command                      | Obs                                            |
 | ----------------------------- | ---------------------------- | ---------------------------------------------- |
 | **list kubernetes resources** | `sudo kubectl api-resources` | used to find resources to create manifest file |
@@ -43,14 +41,29 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 | **redirect port from container to Pod** | `sudo kubectl port-forward pod/mypod 8080:80` |                                                      |
 | **select Pod**                          | `sudo kubectl get pods -l app=web`            | - web is label ‘s name that configured in mypod.yaml |
 
-- Registry Commands:
+    - ReplicaSet Commands:
 
-| Description        | Command                                                                               | Obs                  |
-| ------------------ | ------------------------------------------------------------------------------------- | -------------------- |
-| **login**          | `docker login`                                                                        |                      |
-| **push**           | `docker push cmcirilo/temperature-converter:v1`                                       |                      |
-| **versioning tag** | `docker tag cmcirilo/temperature-converter:v1 cmcirilo/temperature-converter:latest ` |                      |
-| **push latest**    | `docker push cmcirilo/temperature-converter:latest`                                   | it's a good practice |
+| Description            | Command                                         | Obs |
+| ---------------------- | ----------------------------------------------- | --- |
+| **create replicaset**  | `sudo kubectl apply -f myreplicaset.yaml`       |     |
+| **list replicaset**    | `sudo kubectl get replicaset`                   |     |
+| **details replicaset** | `sudo kubectl describe replicaset myreplicaset` |     |
+
+    - Deployment Commands:
+
+| Description                     | Command                                                | Obs |
+| ------------------------------- | ------------------------------------------------------ | --- |
+| **create deployment**           | `sudo kubectl apply -f mydeployment.yaml`              |     |
+| **list deployments**            | `sudo kubectl get deployment`                          |     |
+| **details deployment**          | `sudo kubectl describe deployment mydeployment`        |     |
+| **history version deployment**  | `sudo kubectl rollout history deployment mydeployment` |     |
+| **rollback version deployment** | `sudo kubectl undo deployment mydeployment`            |     |
+
+- Service Commands:
+
+| Description       | Command                     | Obs |
+| ----------------- | --------------------------- | --- |
+| **list services** | `sudo kubectl get services` |     |
 
 ## Help
 
