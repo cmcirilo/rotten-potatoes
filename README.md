@@ -29,7 +29,7 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 | ----------------------------- | ---------------------------- | ---------------------------------------------- |
 | **list kubernetes resources** | `sudo kubectl api-resources` | used to find resources to create manifest file |
 
-    -- POD Commands:
+- POD Commands:
 
 | Description                             | Command                                       | Obs                                                  |
 | --------------------------------------- | --------------------------------------------- | ---------------------------------------------------- |
@@ -41,7 +41,7 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 | **redirect port from container to Pod** | `sudo kubectl port-forward pod/mypod 8080:80` |                                                      |
 | **select Pod**                          | `sudo kubectl get pods -l app=web`            | - web is label ‘s name that configured in mypod.yaml |
 
-    - ReplicaSet Commands:
+- ReplicaSet Commands:
 
 | Description            | Command                                         | Obs |
 | ---------------------- | ----------------------------------------------- | --- |
@@ -49,7 +49,7 @@ git clone https://github.com/cmcirilo/rotten-potatoes.git
 | **list replicaset**    | `sudo kubectl get replicaset`                   |     |
 | **details replicaset** | `sudo kubectl describe replicaset myreplicaset` |     |
 
-    - Deployment Commands:
+- Deployment Commands:
 
 | Description                     | Command                                                | Obs |
 | ------------------------------- | ------------------------------------------------------ | --- |
